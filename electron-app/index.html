@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="header">
+      <div class="header-left">
+        <span class="brand-icon">&#9670;</span>
+        <span class="title" id="title">CAMAI</span>
+      </div>
+      <div class="header-center">
+        <span class="clock" id="clock"></span>
+      </div>
+      <div class="header-right">
+        <button class="power-toggle on" id="power-toggle" title="Camera On/Off">
+          <span class="power-icon">&#9679;</span>
+          <span class="power-label" id="power-label">ON</span>
+        </button>
+        <span class="status-dot" id="status-dot"></span>
+        <span class="status" id="status">CONNECTING</span>
+      </div>
+    </header>
+
+    <div class="separator"></div>
+
+    <div id="grid" class="grid">
+      <!-- Camera cards injected by JS -->
+    </div>
+
+    <!-- Setup wizard injected by JS when needed -->
+    <div id="setup-wizard" class="setup-wizard" style="display:none"></div>
+
+    <footer id="footer">
+      <div class="footer-inner">
+        <span class="footer-left">
+          <span class="sentinel-dot"></span>
+          <span class="footer-label">Camai AI</span>
+        </span>
+        <span class="footer-center-actions">
+          <button class="footer-action-btn" id="btn-events" title="Event Timeline (E)">
+            <span class="action-icon">&#9737;</span>
+          </button>
+          <button class="footer-action-btn" id="btn-zones" title="Zone Editor (Z)">
+            <span class="action-icon">&#9634;</span>
+          </button>
+        </span>
+        <span class="footer-right footer-text" id="footer-text">H.264 Surveillance</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Event Timeline Panel (bottom drawer) -->
+  <div id="event-panel" class="event-panel">
+    <div class="event-panel-header">
+      <span class="event-panel-title">EVENT LOG</span>
+      <span class="event-count" id="event-count"></span>
+      <button class="event-panel-close" id="event-panel-close">&times;</button>
+    </div>
+    <div class="event-panel-body">
+      <div class="event-panel-list" id="event-list">
+        <div class="event-empty">No events yet</div>
+      </div>
+      <div class="event-detail" id="event-detail" style="display:none"></div>
+    </div>
+  </div>
+
+  <!-- Video Clip Player Overlay -->
+  <div id="clip-overlay" class="clip-overlay">
+    <video id="clip-player" class="clip-player" controls autoplay></video>
+    <button class="clip-close" id="clip-close">&times;</button>
+  </div>
+
+  <!-- Zone Editor Name/Level Form -->
+  <div id="zone-form" class="zone-form">
+    <input type="text" id="zone-name-input" class="zone-input" placeholder="Zone name...">
+    <select id="zone-level-select" class="zone-select">
+      <option value="info">Info</option>
+      <option value="warning" selected>Warning</option>
+      <option value="critical">Critical</option>
+    </select>
+    <button class="zone-save-btn" id="zone-save-btn">Save</button>
+    <button class="zone-cancel-btn" id="zone-cancel-btn">Cancel</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+    "enabled": true,
+    "model": {
+        "path": "models/yolov8n.pt",
+        "confidence": 0.50,
+        "max_detect_fps": 5
+    },
+    "motion": {
+        "global_threshold": 0.002,
+        "per_camera": {}
+    },
+    "zones": {},
+    "alerts": {
+        "cooldown_seconds": {
+            "info": 30,
+            "warning": 15,
+            "critical": 5
+        },
+        "macos_notifications": true,
+        "websocket": true,
+        "telegram": {
+            "enabled": false,
+            "bot_token": "",
+            "chat_id": "",
+            "min_level": "warning"
+        }
+    },
+    "recording": {
+        "ring_buffer_seconds": 5,
+        "save_snapshots": true,
+        "save_clips": true,
+        "data_dir": "data"
+    },
+    "behavior": {
+        "linger_threshold_seconds": {
+            "person": 15,
+            "car": 30,
+            "motorcycle": 20,
+            "dog": 10,
+            "cat": 10,
+            "default": 20
+        }
+    },
+    "daynight": {
+        "latitude": 40.7,
+        "longitude": -74.0,
+        "night_start_hour": 20,
+        "night_end_hour": 6,
+        "brightness_threshold": 0.3
+    }
+}

@@ -1,0 +1,16 @@
+node_modules/
+package-lock.json
+dist/
+data/
+models/*.pt
+models/*.pth
+models/*.mlpackage
+*.pyc
+__pycache__/
+.env
+config.json
+sentinel_config.json
+*.db
+*.db-shm
+*.db-wal
+.DS_Store

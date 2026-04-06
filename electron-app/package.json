@@ -1,0 +1,16 @@
+{
+  "name": "camai",
+  "productName": "Camai",
+  "version": "1.0.0",
+  "description": "AI-Powered Surveillance Camera System for macOS",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "npx @electron/packager . Camai --platform=darwin --arch=arm64 --out=dist --overwrite --icon=icon.icns"
+  },
+  "devDependencies": {
+    "@electron/packager": "^19.1.0",
+    "electron": "^33.0.0"
+  }
+}
